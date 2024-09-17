@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
   submitBtn.classList.add("loading");
   submitBtn.disable = true;
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => alert("Done"))
+    .then((response) => alert("Your form has been successfully submitted!"))
     .then(() => {
       window.location.reload();
     })
